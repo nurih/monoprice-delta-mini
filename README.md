@@ -13,10 +13,16 @@ The Cura 3.5 machine settings are as described below.
 
 To reach the settings hit __preferences__ from the top menu, and click __Configure Cura...__ item.
 
+![Main menu](/assets/cura-main-menu.png "main menu")
+
 The __General__ section is shown. Choose __Printers__ from the left instead of General. And hit the __Add__ button.
 
+![New Printer](/assets/cura-new-printer.png "New printer")
 
-Expand the __Custom__ label instead of Ultimake, then type in the name of the printer in the text box at the bottom of the dialog. Hit __Add Printer__ when done.
+Expand the __Custom__ label instead of _Ultimaker_, then type in the name of the printer in the text box at the bottom of the dialog. Hit __Add Printer__ when done.
+
+![Add custom printer](/assets/cura-custom-printer-add.png "Add custom printer")
+
 The next dialog has 2 tabs. In the first tab, replace all values under __Printer Settings__ and __Printhead Settings__ to match the settings in the picture below. It is critical to set the printer settings correctly. 
 
 ### Printer Settings
@@ -40,8 +46,7 @@ The next dialog has 2 tabs. In the first tab, replace all values under __Printer
 |Gantry Height| (leave all the 9's there)|
 |Number Of Extruders|1|
 
-
-## Machine Settings
+![Printer settings tab](/assets/Printertab.png "Printer settings tab")
 
 ### Starting G-Code
 
@@ -80,7 +85,11 @@ M84       ;steppers off
 G90       ;absolute positioning
 ```
 
-## Edtruder 1
+### Edtruder 1
+Switch tabs to the extruder settings, there you can enter the Start G-Code which includes the leveling.
+
+![Extruder tab](/assets/Extruder1tab.png "Extruder tab")
+
 
 ### Extruder Start G-Code
 
