@@ -88,32 +88,11 @@ G90       ;absolute positioning
 ### Edtruder 1
 Switch tabs to the extruder settings, there you can enter the Start G-Code which includes the leveling.
 
-![Extruder tab](/assets/Extruder1tab.png "Extruder tab")
-
 
 ### Extruder Start G-Code
 
-```gcode
-M140 S{material_bed_temperature_layer_0}   ; set bed temp
-M190 S{material_bed_temperature_layer_0}   ; wait for bed temp
-M104 S{material_print_temperature_layer_0} ; set extruder temp
-M109 S{material_print_temperature_layer_0} ; wait for extruder temp
+_Leaving this empty._
 
+### Extruder End G-Code
 
-G21        ;metric values
-G90        ;absolute positioning
-M82        ;set extruder to absolute mode
-M107       ;start with the fan off
-
-G28
-G29 C-0.8 Z0.3
-G1 Z15.0 F4800 ;move the platform down 15mm
-G92 E0                  ;zero the extruded length
-G1 F200 E3              ;extrude 3mm of feed stock
-G92 E0                  ;zero the extruded length again
-G1 F4800
-;Put printing message on LCD screen
-M117 Printing...
-```
-
-_The extruder end code remains empty._
+_Leaving this empty._
