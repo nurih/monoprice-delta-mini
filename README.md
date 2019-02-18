@@ -28,7 +28,7 @@ The next dialog has 2 tabs. In the first tab, replace all values under __Printer
 ### Printer Settings
 |Setting| Value|
 |---|---|
-|X (Width)| 100|
+|X (Width)| 110|
 |Y (Depth)| 100|
 |Z (Height)| 110|
 |Build Plate Shape|Elliptic|
@@ -88,7 +88,14 @@ G90       ;absolute positioning
 ### Edtruder 1
 Switch tabs to the extruder settings, there you can enter the Start G-Code which includes the leveling.
 
+|Setting | Value|
+|---|---|
+|Nozzle Size| 0.4 mm|
+|Compatible material diameter| 1.75 mm|
+|Nozzle offset X| 0 mm|
+|Nozzle offset Y| 0 mm|
 
+![Printer settings tab](/assets/Extruder1tab.png "Printer settings tab")
 ### Extruder Start G-Code
 
 _Leaving this empty._
