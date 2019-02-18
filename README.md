@@ -85,7 +85,7 @@ M84       ;steppers off
 G90       ;absolute positioning
 ```
 
-### Edtruder 1
+### Extruder 1
 Switch tabs to the extruder settings, there you can enter the Start G-Code which includes the leveling.
 
 |Setting | Value|
